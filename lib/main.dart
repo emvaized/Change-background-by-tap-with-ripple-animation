@@ -88,7 +88,8 @@ class _MyHomePageState extends State<MyHomePage>
 
   void _getRandomNewColor() {
     _colorIndex = random.nextInt(_colors.length);
-    if (_colorIndex == _previousColorIndex) {
+    if (_colorIndex == _previousColorIndex ||
+        _colors[_colorIndex] == _backgroundColor) {
       _getRandomNewColor();
     }
     _newColor = _colors[_colorIndex];
