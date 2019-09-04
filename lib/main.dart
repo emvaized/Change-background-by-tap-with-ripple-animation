@@ -138,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage>
                   visible: _initialTextIsVisible,
                   child: Center(
                     child: Text(
-                      'Tap screen',
+                      'Hey there',
                       style: Theme.of(context).textTheme.display1,
                       textAlign: TextAlign.center,
                     ),
